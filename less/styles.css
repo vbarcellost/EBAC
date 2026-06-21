@@ -32,6 +32,14 @@ header .container {
   justify-content: space-between;
   padding: 16px 0;
 }
+.branding a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .menu {
   display: flex;
 }
@@ -54,17 +62,29 @@ section {
   column-gap: 1%;
   row-gap: 4%;
 }
+.product-item {
+  display: flex;
+  flex-direction: column;
+}
 .product-item img {
   width: 100%;
+  aspect-ratio: 1;
   border-radius: 16px;
+  object-fit: cover;
 }
-.product-item h4 {
+.product-item h2 {
+  font-size: 18px;
   margin: 8px 0;
+}
+.product-price {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .product-button {
   display: block;
   padding: 8px 0;
-  margin-top: 8px;
+  margin-top: auto;
   border-radius: 8px;
   background-color: #44bd32;
   color: #fff;

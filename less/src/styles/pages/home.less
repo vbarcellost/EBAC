@@ -12,20 +12,32 @@ section {
 }
 
 .product-item {
+    display: flex;
+    flex-direction: column;
+
     img {
         width: 100%;
+        aspect-ratio: 1;
         border-radius: @standard-radius * 2;
+        object-fit: cover;
     }
 
-    h4 {
+    h2 {
+        font-size: 18px;
         margin: 8px 0;
     }
+}
+
+.product-price {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .product-button {
     display: block;
     padding: 8px 0;
-    margin-top: 8px;
+    margin-top: auto;
     border-radius: @standard-radius;
     background-color: @colors[button-background];
     color: @colors[light-text];
