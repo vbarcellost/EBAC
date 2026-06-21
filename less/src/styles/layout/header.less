@@ -1,0 +1,27 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: @colors[header-background];
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li {
+        margin-left: 24px;
+        font-weight: bold;
+
+        a {
+            color: @colors[light-text];
+            text-decoration: none;
+        }
+    }
+}
